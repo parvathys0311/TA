@@ -1,0 +1,377 @@
+<!-- 2nd wallpaper -snow mountains -working -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Expert</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <style>
+        /*reset*/
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            /*removes space from header */
+        }
+
+        main {
+            max-width: 80ch;
+            margin: auto;
+        }
+
+        .hero_header {
+            margin: 0;
+            height: 80vh;
+
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+
+            background-image: url('https://images.pexels.com/photos/2138922/pexels-photo-2138922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+
+
+
+            font-variant: small-caps;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-weight: bold;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,button {
+            margin: 0;
+
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        p {
+            font-family: 'Karla', sans-serif;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        nav ul {
+            margin: 0;
+
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+
+        }
+
+        nav li {
+            /* flex: auto; */
+            /* border: 1px solid white; */
+
+            /* font-size: 18px; */
+            padding: 1.5em;
+        }
+
+        nav a {
+            display: block;
+
+            text-decoration: none;
+            font-size: 21px;
+            color: black;
+            font-weight: bold;
+
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-image: linear-gradient(white, purple);
+        }
+
+        nav a:active {
+            border: 1px solid black;
+        }
+
+        .current {
+            background-color: #f7dfdf;
+        }
+
+        .header_flex-item1 ul {
+            display: flex;
+            align-items: start;
+            justify-items: space-between;
+
+
+            margin-top: 0;
+            padding: 2em;
+
+            list-style-type: none;
+        }
+
+        .header_flex-item1 a {
+            font-size: 21px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+
+            padding-right: 1em;
+        }
+
+        .logo {
+            font-size: 40px;
+            color: purple;
+        }
+
+        /* .header_flex-item2 {
+            display: flex;
+        } */
+
+        .herosection {
+            margin-top: 20em;
+            display: flex;
+            flex-direction: column;
+            /* margin: auto; */
+        }
+
+        .herosection h1 {
+            color: white;
+            /* margin: 3em 0em;  */
+
+            text-align: center;
+
+            /* align-items: flex-end; */
+
+
+            font-size: 80px;
+
+        }
+
+        .herosection p {
+            margin-top: 1em;
+            color: whitesmoke;
+            text-align: center;
+
+            font-size: 20px;
+            /* font-style: italic; */
+            /* font-weight: bold; */
+        }
+
+        .herosection button {
+            /* text-align: center; */
+
+            background: linear-gradient(45deg, white 10%, yellow 90%);
+            border: 1px solid greenyellow; 
+            border-radius: 10px; 
+            /* margin-top: 1em;
+            color: white; */
+
+            
+        }
+
+        .herosection a {
+            text-decoration: none;
+            color: black;
+            
+            font-size: 22px; 
+            
+            padding: 0.5em 1em;
+            
+        }
+
+        /* gallery */
+
+        .gallery {
+            text-align: center;
+
+            box-sizing: border-box;
+            width: 100%;
+            border: solid grey 1px;
+            padding: 5px;
+
+        }
+
+        /* contact us */
+
+        .contact {
+            text-align: center;
+
+            box-sizing: border-box;
+            width: 100%;
+            border-bottom: solid grey 1px;
+            padding: 5px;
+        }
+
+        .flex_contact {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .get-in-touch {
+            border: solid grey 2px;
+            padding-left: 5px;
+            padding-right: 5em;
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+
+        .form_style ul,
+        .get-in-touch ul {
+            margin: 0;
+            padding: 10px;
+
+            list-style-type: none;
+        }
+
+        .get-in-touch p {
+            margin: 0;
+
+            font-size: 14px;
+            line-height: 25px;
+
+            text-align: left;
+        }
+
+        /* Contact Us - form */
+
+        .form_style ul{
+            display: flex;
+            flex-direction:column;
+
+            align-items: flex-start;
+        }
+
+        .form_style li {
+            display:flex;
+            /* justify-content: flex-start; */
+        }
+
+
+        .form_style label, input, textarea {
+            flex: 1 0 120px;
+            text-align: left;
+            margin: 5px;
+        }
+
+           
+    </style>
+</head>
+
+<body>
+    <!-- Header for home page - includes hero-section -->
+    <section class="hero_header">
+        <header>
+            <element class="header_flex-item1">
+                <ul>
+                    <li><a href="#destination"><i class="fa fa-ravelry logo"></i></a></li>
+                    <li><a href="#destination">
+                            <h2> Travel Experts</h2>
+                        </a></li>
+                </ul>
+            </element>
+            <nav>
+                <ul>
+                    <li><a href="#destination">Destinations</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a class="current" href="#login">Login</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <element class="herosection">
+            <h1> Discover World</h1>
+            <p> Start your adventure with us and create memorable moments</p>
+            <button><a href="#signup">Sign Up</a></button>
+        </element>
+    </section>
+    <main>
+        <section class="gallery">
+            <h2>Gallery</h2>
+        </section>
+        <!--  contact us -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <section class="flex_contact">
+                <section class="form_style">
+                    <form action="" method="POST">
+                        <ul>
+                            <li>
+                                <label> Your Name: </label>
+                                <input type="text" name="_replyto"> 
+                            </li>
+                            <li>
+                                <label> Your email: </label>
+                                <input type="text" name="_replyto"> 
+                            </li>
+                            <li>
+                                <label> Your message: </label>
+                                <textarea name="message"></textarea>
+                            </li>
+                            <li>
+                                <button type="submit">Send</button>
+                            </li>
+                        </ul>
+                    </form>
+                </section>
+                <section class="get-in-touch">
+                    <ul>
+                        <li>
+                            <p>SAIT Main Campus</p>
+                        </li>
+                        <li>
+                            <p>1301 16 Ave NW </p>
+                        </li>
+                        <li>
+                            <p>Calgary, Alberta, CANADA </p>
+                        </li>
+                        <li>
+                            <p>T2M 0L4</p>
+                        </li>
+                        <li>
+                            <p>Tel: 403.284.7248 </p>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <p>NR Buck Crump Bldg</p>
+                        </li>
+                        <li>
+                            <p>1940 Centre Avenue NE</p>
+                        </li>
+                        <li>
+                            <p>Calgary, Alberta, CANADA </p>
+                        </li>
+                        <li>
+                            <p>T2E 0A7</p>
+                        </li>
+                        <li>
+                            <p>Tel: 403.210.4150 </p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
